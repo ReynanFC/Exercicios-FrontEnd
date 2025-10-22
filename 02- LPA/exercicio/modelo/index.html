@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>IMC: Tabela de Índice Corporal</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+
+  <body>
+    <section class="container">
+      <header><h1>Tabela IMC</h1></header>
+      <section id="informacoes">
+        <div>
+          <h2>IMC</h2>
+          <p>
+            Menos do que 18,5 <br />
+            Entre 18,5 e 24,9 <br />
+            Entre 25 e 29,9 <br />
+            Entre 30 e 34,9 <br />
+            Entre 35 e 39,9 <br />
+            Mais do que 40
+          </p>
+        </div>
+
+        <div id="resultado">
+          <h2>Resultado</h2>
+          <p>
+            Abaixo do peso <br />
+            Peso normal <br />
+            SobrePeso <br />
+            Obesidade grau 1 <br />
+            Obesidade grau 2 <br />
+            Obesidade grau 3
+          </p>
+        </div>
+      </section>
+
+      <h1>Calcule seu IMC</h1>
+      <main>
+        <form action="">
+          <fieldset>
+            <legend>Dados para cálculo do IMC</legend>
+
+            <label for="input-peso">Peso:</label>
+            <input type="number" id="input-peso" placeholder="Ex.: 70.5" step="0.01" required/>
+
+            <label for="input-altura">Altura:</label>
+            <input type="number" id="input-altura" placeholder="Ex.: 1.75" step="0.01" required/>
+
+            <button type="submit">Calcular IMC</button>
+          </fieldset>
+        </form>
+
+        <div id="caixaResposta"><p id="resposta"></p></div>
+      </main>
+    </section>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+:root {
+  --fundo: rgb(75, 107, 150);
+  --mudanca-botao: rgb(21, 67, 128);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--fundo);
+  font-family: "Open sans", sans-serif;
+  font-size: 1.3em;
+  line-height: 1.5em;
+  zoom: 0.8;
+}
+
+h2 {
+  font-size: 25px;
+}
+
+#informacoes {
+  display: flex;
+  justify-content: space-between;
+}
+
+#resultado {
+  text-align: right;
+}
+
+.container {
+  max-width: 640px;
+  margin: 50px auto;
+  background-color: #ffff;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+h1 {
+  margin-top: 14px;
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+p {
+  margin-bottom: 30px;
+}
+
+form input,
+form label,
+form button {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+form input {
+  font-size: 24px;
+  height: 50px;
+  padding: 0 20px;
+}
+
+form input:focus {
+  outline: 1px solid var(--fundo);
+}
+
+form button {
+  border: none;
+  background-color: var(--fundo);
+  color: #ffff;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 10px;
+  transition: background-color 0.5s ease;
+  cursor: pointer;
+  margin-top: 25px;
+}
+
+form button:hover {
+  background-color: var(--mudanca-botao);
+}
+
+form button:active {
+  background-color: rgb(231, 68, 18);
+}
+
+fieldset {
+  border: 1px solid var(--fundo);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+legend {
+  padding: 0 10px;
+  font-weight: bold;
+  color: var(--fundo);
+}
+
+#caixaResposta {
+  margin-top: 15px;
+  text-align: center;
+}
+
+#resposta {
+  display: inline;
+  background-color: rgb(235, 219, 150);
+  border-radius: 2px;
+}
+#caixaResposta #resposta.error {
+  background-color: #ee6a6a;
+}
+
+/* Firefox */
+input[type="number"] {
+  appearance: textfield;
+}
